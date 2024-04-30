@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Dapp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .manufacturer-btn {
+            background-color: lightblue;
+        }
+        .retailer-btn {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Supply Chain Dapp</h1>
+    <button id="connect-wallet">Connect MetaMask</button>
+    <div id="option-buttons" style="display: none;">
+        <button class="manufacturer-btn" id="manufacturer-option">Manufacturer</button>
+        <button class="retailer-btn" id="retailer-option">Retailer</button>
+    </div>
+    <div id="manufacturer-section" style="display: none;">
+        <h2>Manufacturer Section</h2>
+        <input type="text" id="product-id" placeholder="Product ID"><br>
+        <input type="text" id="product-name" placeholder="Product Name"><br>
+        <input type="text" id="supply-chain-details" placeholder="Supply Chain Details"><br>
+        <button id="add-product">Add Product</button>
+    </div>
+    <div id="retailer-section" style="display: none;">
+        <h2>Retailer Section</h2>
+        <input type="text" id="product-id-retailer" placeholder="Product ID"><br>
+        <button id="get-product-details">Get Product Details</button>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.5.3.min.js" integrity="sha384-gI8/tZLd1LMybrNl3kjPbuC/5Kz9fL0/F06v1cYQSSJ+1RjPtZ3g+IwOK5F3pK8u" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
