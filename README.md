@@ -30,7 +30,7 @@ npm install --save-dev hardhat
 npx hardhat init
 ```
 
-![Screenshot 2024-04-23 104834](https://github.com/Mragankk/supplychain_dapp/assets/145200189/06ac5459-194f-4528-959f-07ce42d65f9b)
+  ![image](https://github.com/Mragankk/supply-chain_dapp/assets/145200189/32884b60-3f36-42d8-9010-3fa3c901f4c5)
 
 - Installing Hardhat
 ```
@@ -54,19 +54,20 @@ Compile the contracts using the following command:
 ```
 npx hardhat compile
 ```
-  ![image](https://github.com/Mragankk/supplychain_dapp/assets/145200189/db8639d2-9f90-4432-a322-500484d7dbd3)
+  ![image](https://github.com/Mragankk/supply-chain_dapp/assets/145200189/509c1a45-f1ca-4ccb-afc3-9996a159c650)
 
 - Testing contract
   To test our contract, we are going to use Hardhat Network, a local Ethereum network designed for development. It comes built-in with Hardhat, and it's used as the default network. use the command to test:
   ```
   npx hardhat test
   ```
-  ![image](https://github.com/Mragankk/supplychain_dapp/assets/145200189/866337f6-68c8-4ea5-883b-1613e5288422)
+![image](https://github.com/Mragankk/supply-chain_dapp/assets/145200189/5a29103c-3af7-4643-8cb5-77de90195171)
 
 - Deploying Contracts
 Now we have to configure the `hardhat.config.js` file
 
-  ![image](https://github.com/Mragankk/supplychain_dapp/assets/145200189/41f97782-927e-4b17-a05c-3e95057c53f2)
+  ![image](https://github.com/Mragankk/supply-chain_dapp/assets/145200189/692d29c9-209e-4df1-b93e-9ab8e1337425)
+
 
   - Deploy contracts using Hardhat:
 ```
