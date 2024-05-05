@@ -12,16 +12,21 @@ contract ProductTracking {
 
     event ProductRegistered(uint256 indexed productId, string name, string supplyChainDetails, address manufacturer);
 
-    function registerProduct(uint256 productId, string memory name, string memory supplyChainDetails) external {
+    modifier onlyManufacturer() {
+        require(msg.sender == tx.origin, "Only manufacturer can perform this action");
+        _;
+    }
+
+    function registerProduct(uint256 productId, string memory name, string memory supplyChainDetails) external onlyManufacturer {
         require(products[productId].manufacturer == address(0), "Product already registered");
-        
+
         products[productId] = Product({
             name: name,
             supplyChainDetails: supplyChainDetails,
-            manufacturer: msg.sender
+            manufacturer: tx.origin
         });
 
-        emit ProductRegistered(productId, name, supplyChainDetails, msg.sender);
+        emit ProductRegistered(productId, name, supplyChainDetails, tx.origin);
     }
 
     function getProductDetails(uint256 productId) external view returns (string memory name, string memory supplyChainDetails, address manufacturer) {
@@ -31,3 +36,4 @@ contract ProductTracking {
         return (product.name, product.supplyChainDetails, product.manufacturer);
     }
 }
+
