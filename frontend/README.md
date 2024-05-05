@@ -13,5 +13,9 @@ Ensure that you have Git installed on your system.
 
    - Click on the "Go Live" button in the VS Code taskbar.
 6. Ensure MetaMask Extension: This frontend requires the MetaMask extension in your browser. Make sure you have MetaMask installed and set up in your browser.
-7. Connect Wallet: Connect your MetaMask wallet to the frontend. This will enable you to vote in the decentralized election.
-8. 
+7. Connect Wallet: Connect your MetaMask wallet to the frontend. This will enable you to add use supplychain tracking.
+8. Manufacturer or Retailer: After connecting to the MetaMask, there will be a choice between a manufacturer and a retailer. Both of them can access the Product details but only the manufacturer can create new product details and update the state of the product.
+9. Manufacturer: This will provide the user a Manufacturer status and he can add product or update the product details with a unique product id.
+10. Retailer: This will provide the user a retailer status who can check the product details and transactions from a product id.
+
+By following these steps, you can run and interact with the frontend of our decentralized supplychain Tracking application.
